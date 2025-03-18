@@ -3,7 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BugFixing - One Page</title>
+    <title>Pixelado</title>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PM3HDNLV");
+    </script>
+    <!-- End Google Tag Manager -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,8 +58,13 @@
         overflow: hidden;
       }
 
-      video{
-        -webkit-mask-image: radial-gradient(circle, #333333  .50%, #33333300 50%, transparent 0%);
+      video {
+        -webkit-mask-image: radial-gradient(
+          circle,
+          #333333 0.5%,
+          #33333300 50%,
+          transparent 0%
+        );
         position: absolute;
       }
 
@@ -62,7 +81,7 @@
       }
 
       #section1 {
-        background-image:  url('https://static.vecteezy.com/system/resources/previews/017/186/218/non_2x/luxury-swimming-pool-on-the-beach-tranquil-scene-of-exotic-tropical-landscape-with-copy-space-summer-background-for-vacation-holidays-beautiful-poolside-and-sunset-sky-luxurious-tropical-beach-photo.jpghttps://pin.it/4rJnDa5L6');
+        background-image: url("https://static.vecteezy.com/system/resources/previews/017/186/218/non_2x/luxury-swimming-pool-on-the-beach-tranquil-scene-of-exotic-tropical-landscape-with-copy-space-summer-background-for-vacation-holidays-beautiful-poolside-and-sunset-sky-luxurious-tropical-beach-photo.jpghttps://pin.it/4rJnDa5L6");
         background-size: cover;
         background-repeat: no-repeat;
       }
@@ -98,7 +117,7 @@
         gap: 2px;
       }
 
-      .logo__text{
+      .logo__text {
         margin-top: -10px;
       }
 
@@ -158,16 +177,16 @@
         background-color: transparent;
       }
 
-    p {
+      p {
         font-size: 22px;
-        font-weight:lighter;
+        font-weight: lighter;
         text-align: center;
         max-width: 70%;
       }
 
       li {
         font-size: 20px;
-        font-weight:lighter;
+        font-weight: lighter;
         text-align: center;
         list-style: none;
       }
@@ -180,8 +199,8 @@
         text-align: center;
       }
 
-      #section4{
-        background-image: url('https://i.pinimg.com/736x/eb/95/bc/eb95bceca6a1c9bd4325e1b5cf14a250.jpg');
+      #section4 {
+        background-image: url("https://i.pinimg.com/736x/eb/95/bc/eb95bceca6a1c9bd4325e1b5cf14a250.jpg");
         background-size: cover;
         background-position-y: 80%;
         color: black;
@@ -256,7 +275,15 @@
         </div>
       </div>
       <div class="section" id="section2">
-        <video class="hwa kVc MIw L4E" poster="https://i.pinimg.com/videos/thumbnails/originals/46/a7/e9/46a7e97abb192e503fdb651e6fd277c7.0000000.jpg" preload="auto" src="blob:https://ar.pinterest.com/e8060c2a-9584-4130-b27f-313bf4e8576b" style="object-fit: contain;"><track kind="captions"></video>
+        <video
+          class="hwa kVc MIw L4E"
+          poster="https://i.pinimg.com/videos/thumbnails/originals/46/a7/e9/46a7e97abb192e503fdb651e6fd277c7.0000000.jpg"
+          preload="auto"
+          src="blob:https://ar.pinterest.com/e8060c2a-9584-4130-b27f-313bf4e8576b"
+          style="object-fit: contain"
+        >
+          <track kind="captions" />
+        </video>
         <div class="title">¿Quiénes Somos?</div>
         <p>
           Somos Pixelado, una empresa dedicada al desarrollo y mantenimiento de
@@ -277,21 +304,20 @@
           <!-- <div class="code-box" id="codeBox"></div>  -->
         </p>
       </div>
-      
-      <div class="section" id="section4">
-          <div class="title">Expertos en Desarrollo</div>
-          <p>
-              Te ayudamos a implementar estándares de desarrollo que mejoren la
-              calidad y escalabilidad de tu software. Algunos aspectos clave que
-              abordamos:
-            </p>
-            <ul>
-                <li>Uso de patrones de diseño adecuados.</li>
-                <li>Optimización del rendimiento y seguridad del código.</li>
-                <li>Estrategias de pruebas y CI/CD.</li>
-                <li>Aplicación de principios SOLID y Clean Code.</li>
-            </ul>
 
+      <div class="section" id="section4">
+        <div class="title">Expertos en Desarrollo</div>
+        <p>
+          Te ayudamos a implementar estándares de desarrollo que mejoren la
+          calidad y escalabilidad de tu software. Algunos aspectos clave que
+          abordamos:
+        </p>
+        <ul>
+          <li>Uso de patrones de diseño adecuados.</li>
+          <li>Optimización del rendimiento y seguridad del código.</li>
+          <li>Estrategias de pruebas y CI/CD.</li>
+          <li>Aplicación de principios SOLID y Clean Code.</li>
+        </ul>
       </div>
       <div class="section" id="section5">
         <div class="title">Contáctanos</div>
@@ -299,64 +325,74 @@
     </div>
 
     <script>
-        gsap.registerPlugin(ScrollTrigger);
-  
-        // Animación de aparición de secciones
-        gsap.utils.toArray(".section").forEach((section) => {
-          gsap.fromTo(
-            section,
-            { opacity: 0, y: 50 },
-            {
-              opacity: 1,
-              y: 0,
-              duration: 1,
-              ease: "power2.out",
-              scrollTrigger: {
-                trigger: section,
-                start: "top 80%",
-                toggleActions: "play none none none",
-              },
-            }
-          );
-        });
-  
-        // Animación de títulos
-        gsap.utils.toArray(".title").forEach((title) => {
-          gsap.fromTo(
-            title,
-            { opacity: 0, scale: 0.8 },
-            {
-              opacity: 1,
-              scale: 1,
-              duration: 1,
-              ease: "back.out(1.7)",
-              scrollTrigger: {
-                trigger: title,
-                start: "top 90%",
-                toggleActions: "play none none none",
-              },
-            }
-          );
-        });
-  
-        // Parallax en los párrafos
-        gsap.utils.toArray("p").forEach((paragraph) => {
-          gsap.fromTo(
-            paragraph,
-            { y: 30, opacity: 0 },
-            {
-              y: 0,
-              opacity: 1,
-              duration: 1.2,
-              ease: "power1.out",
-              scrollTrigger: {
-                trigger: paragraph,
-                start: "top 85%",
-                toggleActions: "play none none none",
-              },
-            }
-          );
-        });
-      </script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Animación de aparición de secciones
+      gsap.utils.toArray(".section").forEach((section) => {
+        gsap.fromTo(
+          section,
+          { opacity: 0, y: 50 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: section,
+              start: "top 80%",
+              toggleActions: "play none none none",
+            },
+          }
+        );
+      });
+
+      // Animación de títulos
+      gsap.utils.toArray(".title").forEach((title) => {
+        gsap.fromTo(
+          title,
+          { opacity: 0, scale: 0.8 },
+          {
+            opacity: 1,
+            scale: 1,
+            duration: 1,
+            ease: "back.out(1.7)",
+            scrollTrigger: {
+              trigger: title,
+              start: "top 90%",
+              toggleActions: "play none none none",
+            },
+          }
+        );
+      });
+
+      // Parallax en los párrafos
+      gsap.utils.toArray("p").forEach((paragraph) => {
+        gsap.fromTo(
+          paragraph,
+          { y: 30, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 1.2,
+            ease: "power1.out",
+            scrollTrigger: {
+              trigger: paragraph,
+              start: "top 85%",
+              toggleActions: "play none none none",
+            },
+          }
+        );
+      });
+    </script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PM3HDNLV"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
   </body>
 </html>
