@@ -58,15 +58,6 @@
         overflow: hidden;
       }
 
-      video {
-        -webkit-mask-image: radial-gradient(
-          circle,
-          #333333 0.5%,
-          #33333300 50%,
-          transparent 0%
-        );
-        position: absolute;
-      }
 
       /* Contenedor del código flotante */
       .code-box {
@@ -154,6 +145,7 @@
         animation: blink 2s infinite;
       }
 
+
       @keyframes blink {
         0%,
         100% {
@@ -184,11 +176,22 @@
         max-width: 70%;
       }
 
+      .pixel-background {
+        background: cadetblue;
+      }
+
       li {
         font-size: 20px;
         font-weight: lighter;
-        text-align: center;
         list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      ul{    
+        margin-block-start: 0;
+        padding-inline-start: 0;
       }
 
       .title {
@@ -209,7 +212,6 @@
         text-decoration: none;
         color: white;
         cursor: pointer;
-
       }
     </style>
   </head>
@@ -217,78 +219,75 @@
     <div class="container">
       <div class="section" id="section1">
         <div class="section1contenidos">
-          <div class="logo">
-            <div class="pixelEspecials">
-              <div class="pixelitos"></div>
-              <div class="pixelitos black"></div>
-              <div class="pixelitos black"></div>
-              <div class="pixelitos black"></div>
+          <a
+            href="https://wa.me/5491138023557"
+            target="_blank"
+            class="whatsapp-button"
+            >
+            <div class="logo">
+              <div class="pixelEspecials">
+                <div class="pixelitos"></div>
+                <div class="pixelitos black"></div>
+                <div class="pixelitos black"></div>
+                <div class="pixelitos black"></div>
+              </div>
+              <div class="pixel"></div>
+              <div class="pixel"></div>
+              <div class="pixel"></div>
+              <div class="pixelEspecials">
+                <div class="pixelitos black"></div>
+                <div class="pixelitos"></div>
+                <div class="pixelitos black"></div>
+                <div class="pixelitos black"></div>
+              </div>
+              <div class="empty"></div>
+              <div class="empty"></div>
+              <div class="pixel"></div>
+              <div class="empty"></div>
+              <div class="empty"></div>
+              <div class="pixel"></div>
+              <div class="empty"></div>
+              <div class="empty"></div>
+              <div class="pixel"></div>
+              <div class="pixelCircle"></div>
+              <div class="pixelCircle"></div>
+              <div class="pixel"></div>
+              <div class="empty"></div>
+              <div class="empty"></div>
+              <div class="pixel"></div>
+              <div class="pixel"></div>
+              <div class="pixel"></div>
+              <div class="pixelEspecials">
+                <div class="pixelitos black"></div>
+                <div class="pixelitos black"></div>
+                <div class="pixelitos black"></div>
+                <div class="pixelitos"></div>
+              </div>
+              <div class="empty"></div>
+              <div class="empty"></div>
+              <div class="pixel"></div>
+              <div class="empty"></div>
+              <div class="empty"></div>
+              <div class="empty"></div>
+              <div class="empty"></div>
+              <div class="empty"></div>
+              <div class="pixel"></div>
+              <div class="empty"></div>
+              <div class="empty"></div>
+              <div class="empty"></div>
+              <div class="empty"></div>
+              <div class="empty"></div>
+              <div class="pixel"></div>
+              <div class="empty logo__text">ixelado</div>
+              <div class="empty"></div>
+              <div class="empty"></div>
+              <div class="empty"></div>
+              <div class="empty"></div>
             </div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixelEspecials">
-              <div class="pixelitos black"></div>
-              <div class="pixelitos"></div>
-              <div class="pixelitos black"></div>
-              <div class="pixelitos black"></div>
-            </div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="pixel"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="pixel"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="pixel"></div>
-            <div class="pixelCircle"></div>
-            <div class="pixelCircle"></div>
-            <div class="pixel"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixelEspecials">
-              <div class="pixelitos black"></div>
-              <div class="pixelitos black"></div>
-              <div class="pixelitos black"></div>
-              <div class="pixelitos"></div>
-            </div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="pixel"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="pixel"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="pixel"></div>
-            <div class="empty logo__text">ixelado</div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-          </div>
+          </a>
         </div>
       </div>
-      <div class="section" id="section2">
-        <video
-          class="hwa kVc MIw L4E"
-          poster="https://i.pinimg.com/videos/thumbnails/originals/46/a7/e9/46a7e97abb192e503fdb651e6fd277c7.0000000.jpg"
-          preload="auto"
-          src="blob:https://ar.pinterest.com/e8060c2a-9584-4130-b27f-313bf4e8576b"
-          style="object-fit: contain"
-        >
-          <track kind="captions" />
-        </video>
+      <div class="section pixel-background " id="section2">
         <div class="title">¿Quiénes Somos?</div>
         <p>
           Somos Pixelado, una empresa dedicada al desarrollo y mantenimiento de
@@ -314,15 +313,15 @@
         <div class="title">Expertos en Desarrollo</div>
         <p>
           Te ayudamos a implementar estándares de desarrollo que mejoren la
-            calidad y escalabilidad de tu software. Algunos aspectos clave que
-            abordamos:
+          calidad y escalabilidad de tu software. Algunos aspectos clave que
+          abordamos:
+          <ul>
+            <li>- Uso de patrones de diseño adecuados -</li>
+            <li>- Optimización del rendimiento y seguridad del código -</li>
+            <li>- Estrategias de pruebas y CI/CD -</li>
+            <li>- Aplicación de principios SOLID y Clean Code -</li>
+          </ul>
         </p>
-        <ul>
-          <li>-Uso de patrones de diseño adecuados.</li>
-          <li>-Optimización del rendimiento y seguridad del código.</li>
-          <li>-Estrategias de pruebas y CI/CD.</li>
-          <li>-Aplicación de principios SOLID y Clean Code.</li>
-        </ul>
       </div>
       <div class="section" id="section5">
         <div class="title">
@@ -379,6 +378,23 @@
 
       // Parallax en los párrafos
       gsap.utils.toArray("p").forEach((paragraph) => {
+        gsap.fromTo(
+          paragraph,
+          { y: 30, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 1.2,
+            ease: "power1.out",
+            scrollTrigger: {
+              trigger: paragraph,
+              start: "top 85%",
+              toggleActions: "play none none none",
+            },
+          }
+        );
+      });
+      gsap.utils.toArray("ul").forEach((paragraph) => {
         gsap.fromTo(
           paragraph,
           { y: 30, opacity: 0 },
